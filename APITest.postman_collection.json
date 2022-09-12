@@ -1,0 +1,233 @@
+{
+	"info": {
+		"_postman_id": "ba681676-8211-4e02-bfd9-4dfa21e9b73d",
+		"name": "APITest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST",
+			"item": [
+				{
+					"name": "Cadastrar Cliente",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/cadastrar/cliente?nome=John&sobrenome=Williams&sexo=M&ddn=15/03/1992&cidade=Philadelphia&idade=30",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cadastrar",
+								"cliente"
+							],
+							"query": [
+								{
+									"key": "nome",
+									"value": "John"
+								},
+								{
+									"key": "sobrenome",
+									"value": "Williams"
+								},
+								{
+									"key": "sexo",
+									"value": "M"
+								},
+								{
+									"key": "ddn",
+									"value": "15/03/1992"
+								},
+								{
+									"key": "cidade",
+									"value": "Philadelphia"
+								},
+								{
+									"key": "idade",
+									"value": "30"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastrar Cidade",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/cadastrar/cidade?nome=Recife&estado=Pernambuco",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cadastrar",
+								"cidade"
+							],
+							"query": [
+								{
+									"key": "nome",
+									"value": "Recife"
+								},
+								{
+									"key": "estado",
+									"value": "Pernambuco"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "GET",
+			"item": [
+				{
+					"name": "pequisar_cidade_nome",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/pesquisar/cidade_nome/Recife",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pesquisar",
+								"cidade_nome",
+								"Recife"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "pequisar_cliente_nome",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/pesquisar/cliente_nome/John",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pesquisar",
+								"cliente_nome",
+								"John"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "pequisar_client_id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/pesquisar/cliente_id/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pesquisar",
+								"cliente_id",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "pequisar_cidade_id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/pesquisar/cidade_estado/Pernambuco",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pesquisar",
+								"cidade_estado",
+								"Pernambuco"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "alterar_nome_cliente",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/alterar_nome/cliente/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"alterar_nome",
+								"cliente",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remover_cliente_id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/remover/cliente/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"remover",
+								"cliente",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
